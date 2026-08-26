@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { personalInfo } from '../data/portfolioData';
@@ -13,10 +14,46 @@ type FormData = {
 export default function Contact() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
-  const onSubmit = (data: FormData) => {
-    console.log(data);
-    alert("Message sent successfully! (Frontend demo)");
-    reset();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true);
+    
+    const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+    const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
+
+    if (!botToken || !chatId) {
+      alert("Telegram configuration is missing. Message not sent.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    const text = `📬 New Message from Portfolio:\n\n👤 Name: ${data.name}\n📧 Email: ${data.email}\n📌 Subject: ${data.subject}\n\n💬 Message:\n${data.message}`;
+
+    try {
+      const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: text,
+        }),
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully to your Telegram!");
+        reset();
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("An error occurred while sending the message.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -152,10 +189,17 @@ export default function Contact() {
 
               <button 
                 type="submit"
-                className="w-full bg-techblue hover:bg-cyan-600 text-white font-medium py-4 rounded-xl transition-colors flex items-center justify-center gap-2 group"
+                disabled={isSubmitting}
+                className="w-full bg-techblue hover:bg-cyan-600 text-white font-medium py-4 rounded-xl transition-colors flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                <Send size={18} className="group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
-                Send Message
+                {isSubmitting ? (
+                  <span>Sending...</span>
+                ) : (
+                  <>
+                    <Send size={18} className="group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
+                    Send Message
+                  </>
+                )}
               </button>
             </form>
           </motion.div>
