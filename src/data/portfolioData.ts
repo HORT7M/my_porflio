@@ -64,38 +64,48 @@ export const skills = [
   }
 ];
 
+import cert1 from '../assets/cert1.jpg';
+import cert2 from '../assets/cert2.jpg';
+import cert3 from '../assets/cert3.jpg';
+import cert4 from '../assets/cert4.jpg';
+import cert5 from '../assets/cert5.jpg';
+
 export const certifications = [
   {
     id: 1,
     name: "CCNA: Switching, Routing, and Wireless Essentials",
     authority: "Cisco Networking Academy (Dragon ICT Academy)",
-    date: "July 2026",
+    date: "12 Jul 2026",
     icon: Server,
-    verifyLink: "https://my-porflio-kappa.vercel.app/#"
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: cert1
   },
   {
     id: 2,
     name: "Junior Cybersecurity Analyst Career Path Exam",
     authority: "Cisco Networking Academy",
-    date: "April 2026",
+    date: "11 Apr 2026",
     icon: Shield,
-    verifyLink: "https://my-porflio-kappa.vercel.app/#"
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: cert2
   },
   {
     id: 3,
     name: "Ethical Hacker",
     authority: "Cisco Networking Academy",
-    date: "March 2026",
+    date: "28 Mar 2026",
     icon: Shield,
-    verifyLink: "https://my-porflio-kappa.vercel.app/#"
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: cert3
   },
   {
     id: 4,
     name: "Introduction to Cybersecurity",
     authority: "Cisco Networking Academy",
-    date: "March 2026",
+    date: "08 Mar 2026",
     icon: Shield,
-    verifyLink: "https://my-porflio-kappa.vercel.app/#"
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: cert4
   },
   {
     id: 5,
@@ -103,7 +113,8 @@ export const certifications = [
     authority: "ETEC Center, Cambodia",
     date: "July 2025",
     icon: HardDrive,
-    verifyLink: "https://my-porflio-kappa.vercel.app/#"
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: cert5
   }
 ];
 
