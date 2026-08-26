@@ -50,7 +50,7 @@ export default function Certifications() {
                 </p>
 
                 <div className="pt-4 border-t border-white/5">
-                  <a href="#" className="inline-flex items-center gap-2 text-sm text-success hover:text-success/80 transition-colors font-medium">
+                  <a href={cert.verifyLink || "#"} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-success hover:text-success/80 transition-colors font-medium">
                     Verify Credential
                     <ExternalLink size={14} />
                   </a>

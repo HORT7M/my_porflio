@@ -1,4 +1,4 @@
-import { Network, Server, MonitorSmartphone, Wrench, HardDrive, Headset, Users } from 'lucide-react';
+import { Network, Server, MonitorSmartphone, Wrench, HardDrive, Headset, Users, Shield } from 'lucide-react';
 
 export const personalInfo = {
   name: "NON HORT",
@@ -67,24 +67,43 @@ export const skills = [
 export const certifications = [
   {
     id: 1,
-    name: "CCNA2: Switching, Routing, and Wireless Essentials",
+    name: "CCNA: Switching, Routing, and Wireless Essentials",
     authority: "Cisco Networking Academy (Dragon ICT Academy)",
     date: "July 2026",
-    icon: Server // placeholder icon for badge
+    icon: Server,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#"
   },
   {
     id: 2,
-    name: "IT Support Essentials",
-    authority: "Cisco Networking Academy (Dragon ICT Academy)",
+    name: "Junior Cybersecurity Analyst Career Path Exam",
+    authority: "Cisco Networking Academy",
     date: "April 2026",
-    icon: Headset
+    icon: Shield,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#"
   },
   {
     id: 3,
+    name: "Ethical Hacker",
+    authority: "Cisco Networking Academy",
+    date: "March 2026",
+    icon: Shield,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#"
+  },
+  {
+    id: 4,
+    name: "Introduction to Cybersecurity",
+    authority: "Cisco Networking Academy",
+    date: "March 2026",
+    icon: Shield,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#"
+  },
+  {
+    id: 5,
     name: "Basic Computer / Networking & Installation",
     authority: "ETEC Center, Cambodia",
     date: "July 2025",
-    icon: HardDrive
+    icon: HardDrive,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#"
   }
 ];
 
