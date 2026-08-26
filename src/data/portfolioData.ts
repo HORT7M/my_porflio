@@ -64,6 +64,11 @@ export const skills = [
   }
 ];
 
+import certCcna from '../assets/cert-ccna2.jpg';
+import certItSupport from '../assets/cert-it-support.jpg';
+import certJuniorCyber from '../assets/cert-junior-cyber.jpg';
+import certEthicalHacker from '../assets/cert-ethical-hacker.jpg';
+
 export const certifications = [
   {
     id: 1,
@@ -71,71 +76,35 @@ export const certifications = [
     authority: "Cisco Networking Academy (Dragon ICT Academy)",
     date: "12 Jul 2026",
     icon: Server,
-    verifyLink: "/certificates/CCNA2.pdf",
-    image: "/certificates/cert-ccna2.jpg"
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certCcna
   },
   {
     id: 2,
-    name: "Junior Cybersecurity Analyst Career Path",
-    authority: "Cisco Networking Academy",
-    date: "11 Apr 2026",
-    icon: Shield,
-    verifyLink: "/certificates/Junior_Cybersecurity_Analyst.pdf",
-    image: "/certificates/cert-junior-cyber.png"
+    name: "IT Support Essentials",
+    authority: "Cisco Networking Academy (Dragon ICT Academy)",
+    date: "10 Apr 2026",
+    icon: Headset,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certItSupport
   },
   {
     id: 3,
+    name: "Junior Cybersecurity Analyst Career Path Exam",
+    authority: "Cisco Networking Academy",
+    date: "11 Apr 2026",
+    icon: Shield,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certJuniorCyber
+  },
+  {
+    id: 4,
     name: "Ethical Hacker",
     authority: "Cisco Networking Academy",
     date: "28 Mar 2026",
     icon: Shield,
-    verifyLink: "/certificates/Ethical_Hacker.pdf",
-    image: "/certificates/cert-ethical-hacker.jpg"
-  },
-  {
-    id: 4,
-    name: "Introduction to Cybersecurity",
-    authority: "Cisco Networking Academy",
-    date: "08 Mar 2026",
-    icon: Shield,
-    verifyLink: "/certificates/Introduction_to_Cybersecurity.pdf",
-    image: "/certificates/cert-intro-cyber.jpg"
-  },
-  {
-    id: 5,
-    name: "IT Support Essentials",
-    authority: "Cisco Networking Academy",
-    date: "2026",
-    icon: Headset,
-    verifyLink: "/certificates/IT_Support_Essentials.pdf",
-    image: "/certificates/cert-it-support.jpg"
-  },
-  {
-    id: 6,
-    name: "Network Defense",
-    authority: "Cisco Networking Academy",
-    date: "2026",
-    icon: Shield,
-    verifyLink: "/certificates/Network_Defense.pdf",
-    image: "/certificates/cert-ccna2.jpg"
-  },
-  {
-    id: 7,
-    name: "Network Support and Security",
-    authority: "Cisco Networking Academy",
-    date: "2026",
-    icon: Network,
-    verifyLink: "/certificates/Network_Support_and_Security.pdf",
-    image: "/certificates/cert-ethical-hacker.jpg"
-  },
-  {
-    id: 8,
-    name: "Networking Basics",
-    authority: "Cisco Networking Academy",
-    date: "2026",
-    icon: Network,
-    verifyLink: "/certificates/Networking_Basics.pdf",
-    image: "/certificates/cert-intro-cyber.jpg"
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certEthicalHacker
   }
 ];
 

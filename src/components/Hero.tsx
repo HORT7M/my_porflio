@@ -44,10 +44,10 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <a 
-                href="#experience" 
+                href="#certifications" 
                 className="w-full sm:w-auto px-8 py-3 bg-techblue hover:bg-cyan-600 text-white rounded-lg font-medium transition-all flex items-center justify-center gap-2 group"
               >
-                View Experience
+                View Certifications
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
