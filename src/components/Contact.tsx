@@ -112,7 +112,7 @@ export default function Contact() {
               <div>
                 <h4 className="text-white font-medium mb-1">Telegram</h4>
                 <a href={`https://${personalInfo.telegram}`} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-techblue transition-colors">
-                  {personalInfo.telegram}
+                  @NonHort_828
                 </a>
               </div>
             </div>
