@@ -68,6 +68,9 @@ import certCcna from '../assets/cert-ccna2.jpg';
 import certItSupport from '../assets/cert-it-support.jpg';
 import certJuniorCyber from '../assets/cert-junior-cyber.jpg';
 import certEthicalHacker from '../assets/cert-ethical-hacker.jpg';
+import certCasa from '../assets/cert-casa.jpg';
+import certEtecCyber from '../assets/cert-etec-cyber.jpg';
+import certTcmLinux from '../assets/cert-tcm-linux.png';
 
 export const certifications = [
   {
@@ -81,12 +84,12 @@ export const certifications = [
   },
   {
     id: 2,
-    name: "IT Support Essentials",
-    authority: "Cisco Networking Academy (Dragon ICT Academy)",
-    date: "10 Apr 2026",
-    icon: Headset,
+    name: "Certified API Security Analyst (CASA)",
+    authority: "APISEC University",
+    date: "12 May 2026",
+    icon: Shield,
     verifyLink: "https://my-porflio-kappa.vercel.app/#",
-    image: certItSupport
+    image: certCasa
   },
   {
     id: 3,
@@ -99,12 +102,39 @@ export const certifications = [
   },
   {
     id: 4,
+    name: "IT Support Essentials",
+    authority: "Cisco Networking Academy (Dragon ICT Academy)",
+    date: "10 Apr 2026",
+    icon: Headset,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certItSupport
+  },
+  {
+    id: 5,
     name: "Ethical Hacker",
     authority: "Cisco Networking Academy",
     date: "28 Mar 2026",
     icon: Shield,
     verifyLink: "https://my-porflio-kappa.vercel.app/#",
     image: certEthicalHacker
+  },
+  {
+    id: 6,
+    name: "Linux 100: Fundamentals",
+    authority: "TCM Security",
+    date: "21 Mar 2026",
+    icon: Server,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certTcmLinux
+  },
+  {
+    id: 7,
+    name: "Basic Cyber Security & Configuration",
+    authority: "ETEC Center",
+    date: "15 Mar 2026",
+    icon: Shield,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certEtecCyber
   }
 ];
 
