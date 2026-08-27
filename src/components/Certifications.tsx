@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { certifications } from '../data/portfolioData';
-import { ExternalLink, X, ZoomIn } from 'lucide-react';
+import { ExternalLink, X } from 'lucide-react';
 
 export default function Certifications() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
