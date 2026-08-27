@@ -39,9 +39,6 @@ export default function Certifications() {
                 <div className="w-full h-64 bg-white/5 rounded-xl mb-6 overflow-hidden flex items-center justify-center border border-white/10 relative">
                    <img src={cert.image} alt={cert.name} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling?.classList.remove('hidden') }} />
                    <div className="absolute hidden text-gray-500 text-sm font-medium">Add {`cert${index+1}.jpg`} to src/assets</div>
-                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <ZoomIn className="text-white w-10 h-10" />
-                   </div>
                 </div>
 
                 <div className="flex items-start justify-between mb-4">
