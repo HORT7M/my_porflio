@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Download, Server, Wifi, Monitor } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
-import catProfile from '../assets/cat_profile.jpg';
+import profilePic from '../assets/profile.jpg';
 
 export default function Hero() {
   return (
@@ -87,7 +87,7 @@ export default function Hero() {
               {/* Profile Image */}
               <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-backgroundLighter shadow-2xl">
                 <img 
-                  src={catProfile} 
+                  src={profilePic} 
                   alt={personalInfo.name} 
                   className="w-full h-full object-cover"
                 />
