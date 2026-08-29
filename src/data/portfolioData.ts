@@ -71,6 +71,10 @@ import certEthicalHacker from '../assets/cert-ethical-hacker.jpg';
 import certCasa from '../assets/cert-casa.jpg';
 import certEtecCyber from '../assets/cert-etec-cyber.jpg';
 import certTcmLinux from '../assets/cert-tcm-linux.png';
+import certCcep from '../assets/cert-ccep.jpg';
+import certDeepfakes from '../assets/cert-deepfakes.jpg';
+import certCpp from '../assets/cert-cpp.jpg';
+import certNetworking from '../assets/cert-networking.jpg';
 
 export const certifications = [
   {
@@ -93,6 +97,15 @@ export const certifications = [
   },
   {
     id: 3,
+    name: "Certified Cybersecurity Educator Professional (CCEP)",
+    authority: "Red Team Leaders",
+    date: "15 Apr 2026",
+    icon: Shield,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certCcep
+  },
+  {
+    id: 4,
     name: "Junior Cybersecurity Analyst Career Path Exam",
     authority: "Cisco Networking Academy",
     date: "11 Apr 2026",
@@ -101,7 +114,7 @@ export const certifications = [
     image: certJuniorCyber
   },
   {
-    id: 4,
+    id: 5,
     name: "IT Support Essentials",
     authority: "Cisco Networking Academy (Dragon ICT Academy)",
     date: "10 Apr 2026",
@@ -110,7 +123,7 @@ export const certifications = [
     image: certItSupport
   },
   {
-    id: 5,
+    id: 6,
     name: "Ethical Hacker",
     authority: "Cisco Networking Academy",
     date: "28 Mar 2026",
@@ -119,7 +132,7 @@ export const certifications = [
     image: certEthicalHacker
   },
   {
-    id: 6,
+    id: 7,
     name: "Linux 100: Fundamentals",
     authority: "TCM Security",
     date: "21 Mar 2026",
@@ -128,13 +141,40 @@ export const certifications = [
     image: certTcmLinux
   },
   {
-    id: 7,
+    id: 8,
     name: "Basic Cyber Security & Configuration",
     authority: "ETEC Center",
     date: "15 Mar 2026",
     icon: Shield,
     verifyLink: "https://my-porflio-kappa.vercel.app/#",
     image: certEtecCyber
+  },
+  {
+    id: 9,
+    name: "Fighting Deepfakes in the Age of AI",
+    authority: "Sunrise Institute",
+    date: "06 Mar 2026",
+    icon: Shield,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certDeepfakes
+  },
+  {
+    id: 10,
+    name: "Basic Computer / Networking & Installation",
+    authority: "ETEC Center",
+    date: "15 Jul 2025",
+    icon: Network,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certNetworking
+  },
+  {
+    id: 11,
+    name: "Basic / Advance C++ / OOP / Algorithm & Project Courses",
+    authority: "ETEC Center",
+    date: "15 Jun 2025",
+    icon: Server,
+    verifyLink: "https://my-porflio-kappa.vercel.app/#",
+    image: certCpp
   }
 ];
 
