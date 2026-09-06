@@ -178,6 +178,7 @@ export const certifications = [
     icon: Server,
     verifyLink: "https://my-porflio-kappa.vercel.app/#",
     image: certCpp
+<<<<<<< HEAD
   },
   {
     id: 12,
@@ -205,6 +206,8 @@ export const certifications = [
     icon: Server,
     verifyLink: "https://my-porflio-kappa.vercel.app/#",
     image: udemy
+=======
+>>>>>>> d004bc92277f5b85db1f9bbf09e5c62691c36f32
   }
 ];
 
