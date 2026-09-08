@@ -35,11 +35,11 @@ export default function Hero() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               IT Support Specialist <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-techblue to-cyan-300">
-                & Networking Enthusiast
+                & Network Administrator
               </span>
             </h1>
             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
-              CCNA-certified IT professional with hands-on experience in networking, hardware troubleshooting, and customer-focused IT support.
+              CCNA-certified professional with hands-on expertise in network administration, hardware troubleshooting, cybersecurity, and AI deepfake defense.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">

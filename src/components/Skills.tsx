@@ -30,7 +30,7 @@ export default function Skills() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Technical Skills</h2>
           <div className="w-20 h-1 bg-techblue mx-auto rounded-full"></div>
           <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-            Comprehensive skill set focusing on networking, systems support, and customer communication.
+            Comprehensive skill set focusing on network administration, IT support, cybersecurity, and AI/deepfake awareness.
           </p>
         </motion.div>
 
@@ -39,7 +39,7 @@ export default function Skills() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {skills.map((skillGroup, index) => {
             const Icon = skillGroup.icon;

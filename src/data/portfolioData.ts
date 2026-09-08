@@ -2,22 +2,23 @@ import { Network, Server, MonitorSmartphone, Wrench, Headset, Users, Shield } fr
 
 export const personalInfo = {
   name: "NON HORT",
-  role: "IT Support Specialist",
+  role: "IT Support Specialist & Network Administrator",
   current: "Student at Royal University of Phnom Penh",
   location: "Phnom Penh, Cambodia",
-  focus: "IT Support, Networking, Cybersecurity",
+  focus: "IT Support, Network Administration, Cybersecurity, AI & Deepfake Defense",
   email: "hortnon828@gmail.com",
   phone: "0972 380 872",
   telegram: "t.me/NonHort_828",
   credly: "https://credly.com/users/non-hort",
   address: "#32, St. 1920, Sen Sok, Phnom Penh Thmey, Phnom Penh, Cambodia",
-  intro: "I am a highly motivated IT enthusiast and university student with hands-on training in networking, hardware troubleshooting, and cybersecurity fundamentals. I am passionate about providing structured, customer-focused IT support and applying my Cisco-certified networking knowledge to help organizations maintain smooth IT operations."
+  intro: "I am a highly motivated IT enthusiast and university student with hands-on training in networking, system administration, hardware troubleshooting, cybersecurity fundamentals, and AI deepfake defense. I am passionate about providing structured, customer-focused IT support and applying my Cisco-certified networking knowledge to ensure smooth and secure IT operations."
 };
 
 export const services = [
   "IT Support & Helpdesk",
-  "Network Troubleshooting",
+  "Network Administration & Troubleshooting",
   "Hardware Installation & Configuration",
+  "Cybersecurity Fundamentals & Deepfake Awareness",
   "Remote Support & Technical Documentation",
   "Customer-Focused Technical Communication"
 ];
@@ -50,6 +51,16 @@ export const skills = [
       "Peripheral Connectivity",
       "Remote Access Tools",
       "Technical Documentation"
+    ]
+  },
+  {
+    category: "Cybersecurity & AI",
+    icon: Shield,
+    items: [
+      "Cybersecurity Fundamentals",
+      "Ethical Hacking (Kali Linux)",
+      "API & Network Security",
+      "AI & Deepfake Awareness / Defense"
     ]
   },
   {

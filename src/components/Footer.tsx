@@ -9,7 +9,7 @@ export default function Footer() {
         
         <div className="text-center md:text-left">
           <span className="text-xl font-bold tracking-wider text-white block">{personalInfo.name}</span>
-          <span className="text-sm text-gray-500 font-medium">{personalInfo.role} & Networking Enthusiast</span>
+          <span className="text-sm text-gray-500 font-medium">{personalInfo.role}</span>
         </div>
 
         <div className="flex items-center space-x-6">
