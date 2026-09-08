@@ -16,10 +16,10 @@ export default function Certifications() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Certifications</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Certifications</h2>
           <div className="w-20 h-1 bg-success mx-auto rounded-full"></div>
-          <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-            Verified credentials demonstrating foundational IT and networking knowledge.
+          <p className="mt-4 text-slate-600 dark:text-gray-400 max-w-2xl mx-auto">
+            Verified credentials demonstrating foundational IT, network administration, and cybersecurity knowledge.
           </p>
         </motion.div>
 
@@ -33,10 +33,10 @@ export default function Certifications() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-background rounded-2xl p-6 border border-white/5 hover:border-success/30 transition-all group hover:-translate-y-1 flex flex-col cursor-pointer"
+                className="bg-white dark:bg-background rounded-2xl p-6 border border-slate-200 dark:border-white/5 hover:border-success/40 shadow-sm transition-all group hover:-translate-y-1 flex flex-col cursor-pointer"
                 onClick={() => setSelectedImage(cert.image)}
               >
-                <div className="w-full h-64 bg-white/5 rounded-xl mb-6 overflow-hidden flex items-center justify-center border border-white/10 relative">
+                <div className="w-full h-64 bg-slate-100 dark:bg-white/5 rounded-xl mb-6 overflow-hidden flex items-center justify-center border border-slate-200 dark:border-white/10 relative">
                    <img src={cert.image} alt={cert.name} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling?.classList.remove('hidden') }} />
                    <div className="absolute hidden text-gray-500 text-sm font-medium">Add {`cert${index+1}.jpg`} to src/assets</div>
                 </div>
@@ -45,19 +45,19 @@ export default function Certifications() {
                   <div className="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center text-success group-hover:scale-110 transition-transform flex-shrink-0">
                     <Icon size={24} />
                   </div>
-                  <span className="text-xs font-medium px-3 py-1 bg-white/5 rounded-full text-gray-400 whitespace-nowrap ml-2">
+                  <span className="text-xs font-medium px-3 py-1 bg-slate-100 dark:bg-white/5 rounded-full text-slate-600 dark:text-gray-400 whitespace-nowrap ml-2">
                     {cert.date}
                   </span>
                 </div>
                 
-                <h3 className="text-lg font-bold text-white mb-2 leading-tight flex-grow">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 leading-tight flex-grow">
                   {cert.name}
                 </h3>
-                <p className="text-sm text-gray-400 mb-6">
+                <p className="text-sm text-slate-500 dark:text-gray-400 mb-6">
                   {cert.authority}
                 </p>
 
-                <div className="pt-4 border-t border-white/5">
+                <div className="pt-4 border-t border-slate-200 dark:border-white/5">
                   <a href={cert.verifyLink || "#"} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-success hover:text-success/80 transition-colors font-medium" onClick={(e) => e.stopPropagation()}>
                     Verify Credential
                     <ExternalLink size={14} />

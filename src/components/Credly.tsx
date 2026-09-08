@@ -14,18 +14,18 @@ export default function Credly() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-backgroundLighter border border-white/10 rounded-3xl p-10 md:p-14 shadow-2xl"
+          className="bg-white dark:bg-backgroundLighter border border-slate-200 dark:border-white/10 rounded-3xl p-10 md:p-14 shadow-lg dark:shadow-2xl"
         >
           <div className="w-16 h-16 bg-techblue/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-techblue">
             <ShieldCheck size={32} />
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Certified & Verified</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Certified & Verified</h2>
           <h3 className="text-xl text-techblue font-medium mb-6">
             View my professional certifications and technical achievements
           </h3>
           
-          <p className="text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-slate-600 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
             Explore my verified certifications on Credly and see the technical knowledge I've gained through Cisco Networking Academy and other training programs.
           </p>
 
@@ -33,7 +33,7 @@ export default function Credly() {
             href={personalInfo.credly} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-white text-background font-bold rounded-xl hover:bg-gray-200 transition-colors group"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-techblue text-white dark:bg-white dark:text-background font-bold rounded-xl hover:bg-cyan-600 dark:hover:bg-gray-200 transition-colors group shadow-md"
           >
             <span>View Credly Profile</span>
             <ExternalLink size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
