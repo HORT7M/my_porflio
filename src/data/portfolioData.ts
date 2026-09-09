@@ -87,7 +87,6 @@ import certDeepfakes from '../assets/cert-deepfakes.jpg';
 import certCpp from '../assets/cert-cpp.jpg';
 import certNetworking from '../assets/cert-networking.jpg';
 import certCcnaIntro from '../assets/cert-ccna-intro.png';
-import certGoogleCyber from '../assets/cert-google-cyber.png';
 import certGoogleCyberSpec from '../assets/cert-google-cybersecurity-spec.png';
 import certKali from '../assets/cert-kali.jpg';
 
@@ -112,15 +111,6 @@ export const certifications = [
   },
   {
     id: 3,
-    name: "Foundations of Cybersecurity",
-    authority: "Google (Coursera)",
-    date: "06 Sep 2026",
-    icon: Shield,
-    verifyLink: "https://coursera.org/verify/H7MB9LJY851B",
-    image: certGoogleCyber
-  },
-  {
-    id: 4,
     name: "CCNA: Switching, Routing, and Wireless Essentials",
     authority: "Cisco Networking Academy (Dragon ICT Academy)",
     date: "12 Jul 2026",
@@ -129,7 +119,7 @@ export const certifications = [
     image: certCcna
   },
   {
-    id: 5,
+    id: 4,
     name: "Certified API Security Analyst (CASA)",
     authority: "APISEC University",
     date: "12 May 2026",
@@ -138,7 +128,7 @@ export const certifications = [
     image: certCasa
   },
   {
-    id: 6,
+    id: 5,
     name: "Certified Cybersecurity Educator Professional (CCEP)",
     authority: "Red Team Leaders",
     date: "15 Apr 2026",
@@ -147,7 +137,7 @@ export const certifications = [
     image: certCcep
   },
   {
-    id: 7,
+    id: 6,
     name: "Junior Cybersecurity Analyst Career Path Exam",
     authority: "Cisco Networking Academy",
     date: "11 Apr 2026",
@@ -156,7 +146,7 @@ export const certifications = [
     image: certJuniorCyber
   },
   {
-    id: 8,
+    id: 7,
     name: "IT Support Essentials",
     authority: "Cisco Networking Academy (Dragon ICT Academy)",
     date: "10 Apr 2026",
@@ -165,7 +155,7 @@ export const certifications = [
     image: certItSupport
   },
   {
-    id: 9,
+    id: 8,
     name: "Ethical Hacker",
     authority: "Cisco Networking Academy",
     date: "28 Mar 2026",
@@ -174,7 +164,7 @@ export const certifications = [
     image: certEthicalHacker
   },
   {
-    id: 10,
+    id: 9,
     name: "Linux 100: Fundamentals",
     authority: "TCM Security",
     date: "21 Mar 2026",
@@ -183,7 +173,7 @@ export const certifications = [
     image: certTcmLinux
   },
   {
-    id: 11,
+    id: 10,
     name: "Basic Cyber Security & Configuration",
     authority: "ETEC Center",
     date: "15 Mar 2026",
@@ -192,7 +182,7 @@ export const certifications = [
     image: certEtecCyber
   },
   {
-    id: 12,
+    id: 11,
     name: "Fighting Deepfakes in the Age of AI",
     authority: "Sunrise Institute",
     date: "06 Mar 2026",
@@ -201,7 +191,7 @@ export const certifications = [
     image: certDeepfakes
   },
   {
-    id: 13,
+    id: 12,
     name: "Ethical Hacking Using Kali Linux",
     authority: "Udemy",
     date: "16 Feb 2026",
@@ -210,7 +200,7 @@ export const certifications = [
     image: certKali
   },
   {
-    id: 14,
+    id: 13,
     name: "Basic Computer / Networking & Installation",
     authority: "ETEC Center",
     date: "15 Jul 2025",
@@ -219,7 +209,7 @@ export const certifications = [
     image: certNetworking
   },
   {
-    id: 15,
+    id: 14,
     name: "Basic / Advance C++ / OOP / Algorithm & Project Courses",
     authority: "ETEC Center",
     date: "15 Jun 2025",
