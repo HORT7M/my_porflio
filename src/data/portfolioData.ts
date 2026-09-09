@@ -88,11 +88,21 @@ import certCpp from '../assets/cert-cpp.jpg';
 import certNetworking from '../assets/cert-networking.jpg';
 import certCcnaIntro from '../assets/cert-ccna-intro.png';
 import certGoogleCyber from '../assets/cert-google-cyber.png';
+import certGoogleCyberSpec from '../assets/cert-google-cybersecurity-spec.png';
 import certKali from '../assets/cert-kali.jpg';
 
 export const certifications = [
   {
     id: 1,
+    name: "Google Cybersecurity Professional Certificate",
+    authority: "Google (Coursera)",
+    date: "09 Sep 2026",
+    icon: Shield,
+    verifyLink: "https://coursera.org/verify/professional-cert/XUN93J7MOCNQ",
+    image: certGoogleCyberSpec
+  },
+  {
+    id: 2,
     name: "CCNA: Introduction to Networks",
     authority: "Cisco Networking Academy (Royal University of Phnom Penh)",
     date: "06 Sep 2026",
@@ -101,7 +111,7 @@ export const certifications = [
     image: certCcnaIntro
   },
   {
-    id: 2,
+    id: 3,
     name: "Foundations of Cybersecurity",
     authority: "Google (Coursera)",
     date: "06 Sep 2026",
@@ -110,7 +120,7 @@ export const certifications = [
     image: certGoogleCyber
   },
   {
-    id: 3,
+    id: 4,
     name: "CCNA: Switching, Routing, and Wireless Essentials",
     authority: "Cisco Networking Academy (Dragon ICT Academy)",
     date: "12 Jul 2026",
@@ -119,7 +129,7 @@ export const certifications = [
     image: certCcna
   },
   {
-    id: 4,
+    id: 5,
     name: "Certified API Security Analyst (CASA)",
     authority: "APISEC University",
     date: "12 May 2026",
@@ -128,7 +138,7 @@ export const certifications = [
     image: certCasa
   },
   {
-    id: 5,
+    id: 6,
     name: "Certified Cybersecurity Educator Professional (CCEP)",
     authority: "Red Team Leaders",
     date: "15 Apr 2026",
@@ -137,7 +147,7 @@ export const certifications = [
     image: certCcep
   },
   {
-    id: 6,
+    id: 7,
     name: "Junior Cybersecurity Analyst Career Path Exam",
     authority: "Cisco Networking Academy",
     date: "11 Apr 2026",
@@ -146,7 +156,7 @@ export const certifications = [
     image: certJuniorCyber
   },
   {
-    id: 7,
+    id: 8,
     name: "IT Support Essentials",
     authority: "Cisco Networking Academy (Dragon ICT Academy)",
     date: "10 Apr 2026",
@@ -155,7 +165,7 @@ export const certifications = [
     image: certItSupport
   },
   {
-    id: 8,
+    id: 9,
     name: "Ethical Hacker",
     authority: "Cisco Networking Academy",
     date: "28 Mar 2026",
@@ -164,7 +174,7 @@ export const certifications = [
     image: certEthicalHacker
   },
   {
-    id: 9,
+    id: 10,
     name: "Linux 100: Fundamentals",
     authority: "TCM Security",
     date: "21 Mar 2026",
@@ -173,7 +183,7 @@ export const certifications = [
     image: certTcmLinux
   },
   {
-    id: 10,
+    id: 11,
     name: "Basic Cyber Security & Configuration",
     authority: "ETEC Center",
     date: "15 Mar 2026",
@@ -182,7 +192,7 @@ export const certifications = [
     image: certEtecCyber
   },
   {
-    id: 11,
+    id: 12,
     name: "Fighting Deepfakes in the Age of AI",
     authority: "Sunrise Institute",
     date: "06 Mar 2026",
@@ -191,7 +201,7 @@ export const certifications = [
     image: certDeepfakes
   },
   {
-    id: 12,
+    id: 13,
     name: "Ethical Hacking Using Kali Linux",
     authority: "Udemy",
     date: "16 Feb 2026",
@@ -200,7 +210,7 @@ export const certifications = [
     image: certKali
   },
   {
-    id: 13,
+    id: 14,
     name: "Basic Computer / Networking & Installation",
     authority: "ETEC Center",
     date: "15 Jul 2025",
@@ -209,7 +219,7 @@ export const certifications = [
     image: certNetworking
   },
   {
-    id: 14,
+    id: 15,
     name: "Basic / Advance C++ / OOP / Algorithm & Project Courses",
     authority: "ETEC Center",
     date: "15 Jun 2025",
